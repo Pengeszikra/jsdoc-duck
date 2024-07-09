@@ -1,6 +1,6 @@
 {
   "name": "jsdoc-duck",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "react/jsdoc minimal typesafe state handling",
   "author": "Peter Vivo <vivo.peter@protonmail.com>",
   "license": "MIT",
@@ -19,7 +19,8 @@
     "jsDoc",
     "react",
     "state management",
-    "useDuck"
+    "useDuck",
+    "types"
   ],
   "scripts": {
     "build": "tsc && vite build",
