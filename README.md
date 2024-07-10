@@ -3,6 +3,8 @@ jsdoc-duck is a minimalist library that helps organize mid-complex state handlin
 It is based on [react-state-factory](https://www.npmjs.com/package/react-state-factory).
 The big difference is for simplicity reason don't included useStateReducer counterpart.
 
+> this library is also useful for react/typescript application in same way as react-state-factory short example will included
+
 ## Installation
 
 ```sh
@@ -10,7 +12,9 @@ npm add jsdoc-duck
 ```
 
 ## TLDR
-Just define the actions and state then useDuck give back your typed state and quack with list of actions
+Just define the actions and state then useDuck give back your typed state and quack with list of actions.
+
+## jsDoc/JS example
 
 ```js
 /**
@@ -154,6 +158,7 @@ export const pokerReducer = (state, { type, payload }) => {
 > Finally the Poker component with `useDuck` a dispatchable actions list.
 ```js
 export const Poker = () => {
+  // poker, and quack of course in array destruction, so you can give any name which is fit for your component.
   const [poker, quack] = useDuck(pokerReducer, pokerSetup, actionsMap);
 
   useEffect(() => {

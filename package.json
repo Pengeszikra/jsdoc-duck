@@ -1,6 +1,6 @@
 {
   "name": "jsdoc-duck",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "react/jsdoc minimal typesafe state handling",
   "author": "Peter Vivo <vivo.peter@protonmail.com>",
   "license": "MIT",

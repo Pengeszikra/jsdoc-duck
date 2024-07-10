@@ -1,3 +1,5 @@
+/* eslint-disable jsdoc/valid-types */
+/* eslint-disable jsdoc/no-undefined-types */
 import { useMemo, useReducer, Dispatch } from "react";
 
 /**
