@@ -1,6 +1,6 @@
 {
   "name": "jsdoc-duck",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "react/jsdoc minimal typesafe state handling",
   "author": "Peter Vivo <vivo.peter@protonmail.com>",
   "license": "MIT",
@@ -44,7 +44,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "react": "^16.0.0",
-    "typescript": "^5.5.3",
+    "typescript": "^5.5.4",
     "vite": "^4.4.5",
     "vite-plugin-dts": "^3.5.3",
     "vite-plugin-eslint": "^1.8.1"

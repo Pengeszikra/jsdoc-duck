@@ -3,7 +3,7 @@ jsdoc-duck is a minimalist library that helps organize mid-complex state handlin
 It is based on [react-state-factory](https://www.npmjs.com/package/react-state-factory).
 The big difference is for simplicity reason don't included useStateReducer counterpart.
 
-> this library is also useful for react/typescript application in same way as react-state-factory short example will included
+> this library is also useful for react/typescript application in same way as react-state-factory.
 
 ## Installation
 
@@ -16,11 +16,11 @@ Just define the actions and state then useDuck give back your typed state and qu
 
 ## jsDoc/JS example
 
-```js
+```jsx
 /**
- * @typedef {{type: "FOO", payload: string[] }} FOO
- * @typedef {{type: "FUU", payload: number }} FUU
- * @typedef { FOO | FUU } ActionsMap
+ * @typedef {{ type: "FOO", payload: string[] }
+ * | { type: "FUU", payload: number }
+ * } ActionsMap
  */
  
 /** @type {import('/jsdoc-duck').Labels<ActionsMap>} */ 
@@ -69,26 +69,25 @@ where this small library ( less than 100 LOC ) can show the usability of `typed 
 > First of all I create a AM - ActionsMap which is holding group actions with united typedefs
 ```js
 /**
- * @typedef {{ type: "SUMMON", payload: Player[] }} SUMMON
- * @typedef {{ type: "DECK", payload: [string, string][] }} DECK
- * @typedef {{ type: "NEW_GAME", payload: Player }} NEW_GAME - dealer
- * @typedef {{ type: "BLINDS", payload: number | string }} BLINDS - blinds name or index
- * @typedef {{ type: "DEALING", payload:  null }} DEALING
- * @typedef {{ type: "PRE_FLOP", payload: string }} PRE_FLOP
- * @typedef {{ type: "FLOP", payload: string }} FLOP
- * @typedef {{ type: "TURN", payload: number }} TURN
- * @typedef {{ type: "RIVER", payload: string }} RIVER
- * @typedef {{ type: "SHOWDOWN", payload: string }} SHOWDOWN
- * @typedef {{ type: "CALL", payload: string }} CALL
- * @typedef {{ type: "RAISE", payload: string }} RAISE
- * @typedef {{ type: "FOLD", payload: string }} FOLD
- * @typedef {{ type: "CHECK", payload: string }} CHECK
- * @typedef {{ type: "NEXT_HAND", payload: string }} NEXT_HAND
- * @typedef {{ type: "ESCAPE", payload: string }} ESCAPE
- * @typedef {{ type: "CHAMPION_ARE", payload: string }} CHAMPION_ARE
- * @typedef {{ type: "CALC_RANK", payload: null }} CALC_RANK
- *
- * @typedef { DECK | SUMMON | NEW_GAME | BLINDS | DEALING | PRE_FLOP | FLOP | TURN | RIVER | SHOWDOWN | CALL | RAISE | FOLD | CHECK | NEXT_HAND | ESCAPE | CHAMPION_ARE | CALC_RANK } ActionsMap
+ * @typedef {{ type: "SUMMON", payload: Player[] }
+ * | { type: "DECK", payload: [string, string][] }
+ * | { type: "NEW_GAME", payload: Player }
+ * | { type: "BLINDS", payload: number | string }
+ * | { type: "DEALING", payload:  null }
+ * | { type: "PRE_FLOP", payload: string }
+ * | { type: "FLOP", payload: string }
+ * | { type: "TURN", payload: number }
+ * | { type: "RIVER", payload: string }
+ * | { type: "SHOWDOWN", payload: string }
+ * | { type: "CALL", payload: string }
+ * | { type: "RAISE", payload: string }
+ * | { type: "FOLD", payload: string }
+ * | { type: "CHECK", payload: string }
+ * | { type: "NEXT_HAND", payload: string }
+ * | { type: "ESCAPE", payload: string }
+ * | { type: "CHAMPION_ARE", payload: string }
+ * | { type: "CALC_RANK", payload: null }
+ * } ActionsMap
  */
 ```
 
@@ -178,5 +177,3 @@ export const Poker = () => {
     <pre>{JSON.stringify(poker, null, 2)}</pre>
   )
 ```
-
-
