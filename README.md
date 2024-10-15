@@ -14,6 +14,11 @@ npm add jsdoc-duck
 ## TLDR
 Just define the actions and state then useDuck give back your typed state and quack with list of actions.
 
+## Borrow instead use as dependency:
+@primeagen :: [Please Stop With MicroLibraries NPM](https://www.youtube.com/watch?v=IVmIEtwsaYk)
+
+After watch this really meaningfull video about problem, I suggested feel free to use borrowing version of my code, if don't want to use as dependency, instead just copy my [index.js](https://raw.githubusercontent.com/Pengeszikra/jsdoc-duck/refs/heads/main/src/index.js) file renamed and used.
+
 ## jsDoc/JS example
 
 ```jsx
